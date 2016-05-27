@@ -1,2 +1,2 @@
 # Taxes-Holden-Game-Project
-A failed personal project after finishing Introduction of Computer Science
+A failed personal project after taking Introduction of Computer Science
