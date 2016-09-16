@@ -60,7 +60,7 @@ fi
 echo "Creating Debian Packages."
 sudo rm ../openvswitch-*.deb
 sudo rm ../python-openvswitch*.deb
-sudo fakeroot debian/rules binary
+sudo DEB_BUILD_OPTIONS='parallel=8 nocheck' fakeroot debian/rules binary
 if [ $? -gt 0 ]; then
     echo "ERROR:Creating Debian packages failed."
     exit 1
